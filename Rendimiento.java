@@ -10,9 +10,10 @@ public class Rendimiento{
         numeroEstudiantes = sc.nextint();
 
         while()
-        System.out.println("ingresa la nota final de cada uno de tus estudiantes: ");
-        for(i = 0; i < numeroEstudiantes.lenght; i++){
-            notasFinales[i] = numeroEstudiantes[i];
+        
+        for(i = 0; i < numeroEstudiantes; i++){
+            System.out.println("ingresa la nota final de cada uno de tus estudiantes: ");
+            int notasFinales[i] = numeroEstudiantes;
         }
 
     }
