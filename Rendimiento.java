@@ -1,25 +1,28 @@
 import java.util.Scanner;
-public class Rendimiento {
-    public static Scanner sc = new Scanner(System.in);
 
-    public static final double NOTA_MINIMA = 3.0; 
-    public static int numeroEstudiantes = 0;
+public class Rendimiento{
+    public static  Scanner sc = new Scanner(System.in);
+
     public static double[] notasFinales;
-    
 
-    public static void main(String args[]) {
+    public final int NOTA_MINIMA = 0;
 
-        System.out.println("ingresa el numero de estudiantes: ");
-        numeroEstudiantes = sc.nextInt();
-        notasFinales = new double[numeroEstudiantes];
+
+    public static void main(String[] args) {
         
-        for (int i = 0; i < numeroEstudiantes; i++){
+        System.out.println("ingrese el numero de estudiantes: ");
+        int estudiantes = sc.nextInt();
 
-            do {
-                System.out.println("ingresa la nota final de cada uno de tus estudiantes: ");
-                notasFinales[i] = sc.nextDouble();
-            } while (notasFinales[i] >= 0 && notasFinales[i] <= 5);
+
+        notasFinales = new double[estudiantes];
+
+        for(int i = 0; i < estudiantes; i++){
+
+            System.out.println("ingrese la nota final de cada uno de los estudianes: ");
             
-        }  
+
+        }
+
+
     }
 }
